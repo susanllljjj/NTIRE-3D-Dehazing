@@ -1,0 +1,519 @@
+nohup: ignoring input
+
+Parameter Print
+	embedder_model_path: /home/gy/OneRestore/ckpts/embedder_model.tar
+	restore_model_path: ckpts/onerestore_ft_epoch2_v3.tar
+	prompt: None
+	input: /data_nvme/gy/smoke/development/Futaba/train
+	output: output/Futaba
+	concat: False
+
+
+> Model Initialization...
+==> loading existing Embedder model: /home/gy/OneRestore/ckpts/embedder_model.tar
+Loaded embeddings from file ./utils/glove.6B.300d.txt torch.Size([12, 300])
+==> loading existing OneRestore model: ckpts/onerestore_ft_epoch2_v3.tar
+Number of OneRestore parameter: 5.98M
+This is low_haze degradation estimated by visual embedder.
+0014.png Running Time: 0.6571.
+This is low_haze degradation estimated by visual embedder.
+0022.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0023.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0009.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0010.png Running Time: 0.0231.
+This is low_haze degradation estimated by visual embedder.
+0002.png Running Time: 0.0218.
+This is low_haze degradation estimated by visual embedder.
+0001.png Running Time: 0.0210.
+This is low_haze degradation estimated by visual embedder.
+0007.png Running Time: 0.0220.
+This is low_haze degradation estimated by visual embedder.
+0021.png Running Time: 0.0210.
+This is low_haze degradation estimated by visual embedder.
+0015.png Running Time: 0.0216.
+This is low_haze degradation estimated by visual embedder.
+0011.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0008.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0006.png Running Time: 0.0206.
+This is low_haze degradation estimated by visual embedder.
+0013.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0012.png Running Time: 0.0206.
+This is low_haze degradation estimated by visual embedder.
+0004.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0016.png Running Time: 0.0211.
+This is low_haze degradation estimated by visual embedder.
+0017.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0020.png Running Time: 0.0218.
+This is low_haze degradation estimated by visual embedder.
+0019.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0003.png Running Time: 0.0279.
+This is low_haze degradation estimated by visual embedder.
+0005.png Running Time: 0.0209.
+This is low_haze degradation estimated by visual embedder.
+0018.png Running Time: 0.0217.
+Average time is 0.02165532112121582
+
+Parameter Print
+	embedder_model_path: /home/gy/OneRestore/ckpts/embedder_model.tar
+	restore_model_path: ckpts/onerestore_ft_epoch2_v3.tar
+	prompt: None
+	input: /data_nvme/gy/smoke/development/Hinoki/train
+	output: output/Hinoki
+	concat: False
+
+
+> Model Initialization...
+==> loading existing Embedder model: /home/gy/OneRestore/ckpts/embedder_model.tar
+Loaded embeddings from file ./utils/glove.6B.300d.txt torch.Size([12, 300])
+==> loading existing OneRestore model: ckpts/onerestore_ft_epoch2_v3.tar
+Number of OneRestore parameter: 5.98M
+This is low_haze degradation estimated by visual embedder.
+0014.png Running Time: 0.6748.
+This is haze degradation estimated by visual embedder.
+0022.png Running Time: 0.0216.
+This is low_haze degradation estimated by visual embedder.
+0009.png Running Time: 0.0220.
+This is low_haze degradation estimated by visual embedder.
+0010.png Running Time: 0.0216.
+This is low_haze degradation estimated by visual embedder.
+0002.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0001.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0007.png Running Time: 0.0221.
+This is haze degradation estimated by visual embedder.
+0021.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0015.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0011.png Running Time: 0.0214.
+This is low_haze degradation estimated by visual embedder.
+0008.png Running Time: 0.0221.
+This is low_haze degradation estimated by visual embedder.
+0006.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0013.png Running Time: 0.0210.
+This is low_haze degradation estimated by visual embedder.
+0012.png Running Time: 0.0221.
+This is low_haze degradation estimated by visual embedder.
+0004.png Running Time: 0.0218.
+This is low_haze degradation estimated by visual embedder.
+0016.png Running Time: 0.0221.
+This is low_haze degradation estimated by visual embedder.
+0017.png Running Time: 0.0218.
+This is low_haze degradation estimated by visual embedder.
+0020.png Running Time: 0.0218.
+This is low_haze degradation estimated by visual embedder.
+0019.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0003.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0005.png Running Time: 0.0211.
+This is low_haze degradation estimated by visual embedder.
+0018.png Running Time: 0.0216.
+Average time is 0.021561622619628906
+
+Parameter Print
+	embedder_model_path: /home/gy/OneRestore/ckpts/embedder_model.tar
+	restore_model_path: ckpts/onerestore_ft_epoch2_v3.tar
+	prompt: None
+	input: /data_nvme/gy/smoke/development/Koharu/train
+	output: output/Koharu
+	concat: False
+
+
+> Model Initialization...
+==> loading existing Embedder model: /home/gy/OneRestore/ckpts/embedder_model.tar
+Loaded embeddings from file ./utils/glove.6B.300d.txt torch.Size([12, 300])
+==> loading existing OneRestore model: ckpts/onerestore_ft_epoch2_v3.tar
+Number of OneRestore parameter: 5.98M
+This is low_haze degradation estimated by visual embedder.
+0014.png Running Time: 0.5683.
+This is low_haze degradation estimated by visual embedder.
+0022.png Running Time: 0.0211.
+This is low_haze degradation estimated by visual embedder.
+0023.png Running Time: 0.0211.
+This is low_haze degradation estimated by visual embedder.
+0009.png Running Time: 0.0211.
+This is low_haze degradation estimated by visual embedder.
+0010.png Running Time: 0.0209.
+This is low_haze degradation estimated by visual embedder.
+0002.png Running Time: 0.0250.
+This is low_haze degradation estimated by visual embedder.
+0001.png Running Time: 0.0210.
+This is low_haze degradation estimated by visual embedder.
+0025.png Running Time: 0.0206.
+This is low_haze degradation estimated by visual embedder.
+0007.png Running Time: 0.0205.
+This is low_haze degradation estimated by visual embedder.
+0021.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0015.png Running Time: 0.0214.
+This is low_haze degradation estimated by visual embedder.
+0011.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0008.png Running Time: 0.0211.
+This is low_haze degradation estimated by visual embedder.
+0006.png Running Time: 0.0245.
+This is low_haze degradation estimated by visual embedder.
+0013.png Running Time: 0.0210.
+This is low_haze degradation estimated by visual embedder.
+0012.png Running Time: 0.0213.
+This is low_haze degradation estimated by visual embedder.
+0004.png Running Time: 0.0209.
+This is low_haze degradation estimated by visual embedder.
+0016.png Running Time: 0.0216.
+This is low_haze degradation estimated by visual embedder.
+0024.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0017.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0020.png Running Time: 0.0221.
+This is low_haze degradation estimated by visual embedder.
+0019.png Running Time: 0.0210.
+This is low_haze degradation estimated by visual embedder.
+0003.png Running Time: 0.0207.
+This is low_haze degradation estimated by visual embedder.
+0005.png Running Time: 0.0205.
+This is low_haze degradation estimated by visual embedder.
+0018.png Running Time: 0.0206.
+Average time is 0.020603418350219727
+
+Parameter Print
+	embedder_model_path: /home/gy/OneRestore/ckpts/embedder_model.tar
+	restore_model_path: ckpts/onerestore_ft_epoch2_v3.tar
+	prompt: None
+	input: /data_nvme/gy/smoke/development/Midori/train
+	output: output/Midori
+	concat: False
+
+
+> Model Initialization...
+==> loading existing Embedder model: /home/gy/OneRestore/ckpts/embedder_model.tar
+Loaded embeddings from file ./utils/glove.6B.300d.txt torch.Size([12, 300])
+==> loading existing OneRestore model: ckpts/onerestore_ft_epoch2_v3.tar
+Number of OneRestore parameter: 5.98M
+This is haze degradation estimated by visual embedder.
+0014.png Running Time: 0.6364.
+This is haze degradation estimated by visual embedder.
+0022.png Running Time: 0.0209.
+This is haze degradation estimated by visual embedder.
+0023.png Running Time: 0.0213.
+This is haze degradation estimated by visual embedder.
+0009.png Running Time: 0.0206.
+This is haze degradation estimated by visual embedder.
+0010.png Running Time: 0.0208.
+This is haze degradation estimated by visual embedder.
+0002.png Running Time: 0.0204.
+This is haze degradation estimated by visual embedder.
+0001.png Running Time: 0.0206.
+This is haze degradation estimated by visual embedder.
+0025.png Running Time: 0.0209.
+This is haze degradation estimated by visual embedder.
+0007.png Running Time: 0.0211.
+This is haze degradation estimated by visual embedder.
+0026.png Running Time: 0.0206.
+This is haze degradation estimated by visual embedder.
+0021.png Running Time: 0.0204.
+This is haze degradation estimated by visual embedder.
+0015.png Running Time: 0.0215.
+This is haze degradation estimated by visual embedder.
+0011.png Running Time: 0.0227.
+This is haze degradation estimated by visual embedder.
+0008.png Running Time: 0.0208.
+This is haze degradation estimated by visual embedder.
+0006.png Running Time: 0.0208.
+This is haze degradation estimated by visual embedder.
+0013.png Running Time: 0.0206.
+This is haze degradation estimated by visual embedder.
+0012.png Running Time: 0.0205.
+This is haze degradation estimated by visual embedder.
+0004.png Running Time: 0.0211.
+This is haze degradation estimated by visual embedder.
+0016.png Running Time: 0.0209.
+This is haze degradation estimated by visual embedder.
+0024.png Running Time: 0.0211.
+This is haze degradation estimated by visual embedder.
+0017.png Running Time: 0.0210.
+This is haze degradation estimated by visual embedder.
+0020.png Running Time: 0.0212.
+This is haze degradation estimated by visual embedder.
+0019.png Running Time: 0.0208.
+This is haze degradation estimated by visual embedder.
+0003.png Running Time: 0.0249.
+This is haze degradation estimated by visual embedder.
+0005.png Running Time: 0.0223.
+This is haze degradation estimated by visual embedder.
+0018.png Running Time: 0.0223.
+Average time is 0.02226090431213379
+
+Parameter Print
+	embedder_model_path: /home/gy/OneRestore/ckpts/embedder_model.tar
+	restore_model_path: ckpts/onerestore_ft_epoch2_v3.tar
+	prompt: None
+	input: /data_nvme/gy/smoke/development/Natsume/train
+	output: output/Natsume
+	concat: False
+
+
+> Model Initialization...
+==> loading existing Embedder model: /home/gy/OneRestore/ckpts/embedder_model.tar
+Loaded embeddings from file ./utils/glove.6B.300d.txt torch.Size([12, 300])
+==> loading existing OneRestore model: ckpts/onerestore_ft_epoch2_v3.tar
+Number of OneRestore parameter: 5.98M
+This is low_haze degradation estimated by visual embedder.
+0014.png Running Time: 0.6301.
+This is low_haze degradation estimated by visual embedder.
+0022.png Running Time: 0.0227.
+This is low_haze degradation estimated by visual embedder.
+0023.png Running Time: 0.0242.
+This is low_haze degradation estimated by visual embedder.
+0009.png Running Time: 0.0207.
+This is low_haze degradation estimated by visual embedder.
+0010.png Running Time: 0.0206.
+This is low_haze degradation estimated by visual embedder.
+0002.png Running Time: 0.0211.
+This is low_haze degradation estimated by visual embedder.
+0001.png Running Time: 0.0207.
+This is low_haze degradation estimated by visual embedder.
+0025.png Running Time: 0.0209.
+This is low_haze degradation estimated by visual embedder.
+0007.png Running Time: 0.0208.
+This is low_haze degradation estimated by visual embedder.
+0021.png Running Time: 0.0221.
+This is low_haze degradation estimated by visual embedder.
+0015.png Running Time: 0.0211.
+This is low_haze degradation estimated by visual embedder.
+0011.png Running Time: 0.0218.
+This is low_haze degradation estimated by visual embedder.
+0008.png Running Time: 0.0211.
+This is low_haze degradation estimated by visual embedder.
+0006.png Running Time: 0.0219.
+This is low_haze degradation estimated by visual embedder.
+0013.png Running Time: 0.0221.
+This is low_haze degradation estimated by visual embedder.
+0012.png Running Time: 0.0220.
+This is low_haze degradation estimated by visual embedder.
+0004.png Running Time: 0.0223.
+This is low_haze degradation estimated by visual embedder.
+0016.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0024.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0017.png Running Time: 0.0216.
+This is low_haze degradation estimated by visual embedder.
+0020.png Running Time: 0.0229.
+This is low_haze degradation estimated by visual embedder.
+0019.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0003.png Running Time: 0.0221.
+This is low_haze degradation estimated by visual embedder.
+0005.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0018.png Running Time: 0.0214.
+Average time is 0.02143716812133789
+
+Parameter Print
+	embedder_model_path: /home/gy/OneRestore/ckpts/embedder_model.tar
+	restore_model_path: ckpts/onerestore_ft_epoch2_v3.tar
+	prompt: None
+	input: /data_nvme/gy/smoke/development/Shirohana/train
+	output: output/Shirohana
+	concat: False
+
+
+> Model Initialization...
+==> loading existing Embedder model: /home/gy/OneRestore/ckpts/embedder_model.tar
+Loaded embeddings from file ./utils/glove.6B.300d.txt torch.Size([12, 300])
+==> loading existing OneRestore model: ckpts/onerestore_ft_epoch2_v3.tar
+Number of OneRestore parameter: 5.98M
+This is low_haze degradation estimated by visual embedder.
+0014.png Running Time: 0.6376.
+This is low_haze degradation estimated by visual embedder.
+0022.png Running Time: 0.0213.
+This is low_haze degradation estimated by visual embedder.
+0023.png Running Time: 0.0258.
+This is low_haze degradation estimated by visual embedder.
+0009.png Running Time: 0.0213.
+This is low_haze degradation estimated by visual embedder.
+0010.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0002.png Running Time: 0.0210.
+This is low_haze degradation estimated by visual embedder.
+0001.png Running Time: 0.0218.
+This is low_haze degradation estimated by visual embedder.
+0025.png Running Time: 0.0209.
+This is low_haze degradation estimated by visual embedder.
+0007.png Running Time: 0.0211.
+This is low_haze degradation estimated by visual embedder.
+0026.png Running Time: 0.0213.
+This is low_haze degradation estimated by visual embedder.
+0021.png Running Time: 0.0210.
+This is low_haze degradation estimated by visual embedder.
+0015.png Running Time: 0.0239.
+This is low_haze degradation estimated by visual embedder.
+0011.png Running Time: 0.0208.
+This is low_haze degradation estimated by visual embedder.
+0008.png Running Time: 0.0216.
+This is low_haze degradation estimated by visual embedder.
+0006.png Running Time: 0.0208.
+This is low_haze degradation estimated by visual embedder.
+0013.png Running Time: 0.0225.
+This is low_haze degradation estimated by visual embedder.
+0012.png Running Time: 0.0218.
+This is low_haze degradation estimated by visual embedder.
+0004.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0016.png Running Time: 0.0209.
+This is low_haze degradation estimated by visual embedder.
+0024.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0017.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0020.png Running Time: 0.0219.
+This is low_haze degradation estimated by visual embedder.
+0019.png Running Time: 0.0208.
+This is low_haze degradation estimated by visual embedder.
+0003.png Running Time: 0.0217.
+This is low_haze degradation estimated by visual embedder.
+0005.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0018.png Running Time: 0.0229.
+Average time is 0.02294445037841797
+
+Parameter Print
+	embedder_model_path: /home/gy/OneRestore/ckpts/embedder_model.tar
+	restore_model_path: ckpts/onerestore_ft_epoch2_v3.tar
+	prompt: None
+	input: /data_nvme/gy/smoke/development/Tsubaki/train
+	output: output/Tsubaki
+	concat: False
+
+
+> Model Initialization...
+==> loading existing Embedder model: /home/gy/OneRestore/ckpts/embedder_model.tar
+Loaded embeddings from file ./utils/glove.6B.300d.txt torch.Size([12, 300])
+==> loading existing OneRestore model: ckpts/onerestore_ft_epoch2_v3.tar
+Number of OneRestore parameter: 5.98M
+This is low_haze degradation estimated by visual embedder.
+0014.png Running Time: 0.6349.
+This is low_haze degradation estimated by visual embedder.
+0022.png Running Time: 0.0227.
+This is low_haze degradation estimated by visual embedder.
+0023.png Running Time: 0.0221.
+This is low_haze degradation estimated by visual embedder.
+0009.png Running Time: 0.0217.
+This is low_haze degradation estimated by visual embedder.
+0010.png Running Time: 0.0223.
+This is low_haze degradation estimated by visual embedder.
+0002.png Running Time: 0.0219.
+This is low_haze degradation estimated by visual embedder.
+0001.png Running Time: 0.0217.
+This is low_haze degradation estimated by visual embedder.
+0007.png Running Time: 0.0224.
+This is low_haze degradation estimated by visual embedder.
+0021.png Running Time: 0.0214.
+This is low_haze degradation estimated by visual embedder.
+0015.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0011.png Running Time: 0.0214.
+This is low_haze degradation estimated by visual embedder.
+0008.png Running Time: 0.0219.
+This is low_haze degradation estimated by visual embedder.
+0006.png Running Time: 0.0224.
+This is low_haze degradation estimated by visual embedder.
+0013.png Running Time: 0.0221.
+This is low_haze degradation estimated by visual embedder.
+0012.png Running Time: 0.0216.
+This is low_haze degradation estimated by visual embedder.
+0004.png Running Time: 0.0218.
+This is low_haze degradation estimated by visual embedder.
+0016.png Running Time: 0.0216.
+This is low_haze degradation estimated by visual embedder.
+0017.png Running Time: 0.0223.
+This is low_haze degradation estimated by visual embedder.
+0020.png Running Time: 0.0217.
+This is low_haze degradation estimated by visual embedder.
+0019.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0003.png Running Time: 0.0214.
+This is low_haze degradation estimated by visual embedder.
+0005.png Running Time: 0.0216.
+This is low_haze degradation estimated by visual embedder.
+0018.png Running Time: 0.0224.
+Average time is 0.022438526153564453
+
+Parameter Print
+	embedder_model_path: /home/gy/OneRestore/ckpts/embedder_model.tar
+	restore_model_path: ckpts/onerestore_ft_epoch2_v3.tar
+	prompt: None
+	input: /data_nvme/gy/smoke/validation/Akikaze/train
+	output: output/Akikaze
+	concat: False
+
+
+> Model Initialization...
+==> loading existing Embedder model: /home/gy/OneRestore/ckpts/embedder_model.tar
+Loaded embeddings from file ./utils/glove.6B.300d.txt torch.Size([12, 300])
+==> loading existing OneRestore model: ckpts/onerestore_ft_epoch2_v3.tar
+Number of OneRestore parameter: 5.98M
+This is low_haze degradation estimated by visual embedder.
+0014.png Running Time: 0.5584.
+This is low_haze degradation estimated by visual embedder.
+0022.png Running Time: 0.0209.
+This is low_haze degradation estimated by visual embedder.
+0023.png Running Time: 0.0241.
+This is low_haze degradation estimated by visual embedder.
+0009.png Running Time: 0.0210.
+This is low_haze degradation estimated by visual embedder.
+0010.png Running Time: 0.0212.
+This is low_haze degradation estimated by visual embedder.
+0002.png Running Time: 0.0220.
+This is low_haze degradation estimated by visual embedder.
+0001.png Running Time: 0.0210.
+This is low_haze degradation estimated by visual embedder.
+0025.png Running Time: 0.0208.
+This is low_haze degradation estimated by visual embedder.
+0007.png Running Time: 0.0208.
+This is low_haze degradation estimated by visual embedder.
+0021.png Running Time: 0.0208.
+This is low_haze degradation estimated by visual embedder.
+0015.png Running Time: 0.0213.
+This is low_haze degradation estimated by visual embedder.
+0011.png Running Time: 0.0207.
+This is low_haze degradation estimated by visual embedder.
+0008.png Running Time: 0.0227.
+This is low_haze degradation estimated by visual embedder.
+0006.png Running Time: 0.0221.
+This is low_haze degradation estimated by visual embedder.
+0013.png Running Time: 0.0204.
+This is low_haze degradation estimated by visual embedder.
+0012.png Running Time: 0.0222.
+This is low_haze degradation estimated by visual embedder.
+0004.png Running Time: 0.0205.
+This is low_haze degradation estimated by visual embedder.
+0016.png Running Time: 0.0205.
+This is low_haze degradation estimated by visual embedder.
+0024.png Running Time: 0.0215.
+This is low_haze degradation estimated by visual embedder.
+0017.png Running Time: 0.0211.
+This is low_haze degradation estimated by visual embedder.
+0020.png Running Time: 0.0217.
+This is low_haze degradation estimated by visual embedder.
+0019.png Running Time: 0.0206.
+This is low_haze degradation estimated by visual embedder.
+0003.png Running Time: 0.0214.
+This is low_haze degradation estimated by visual embedder.
+0005.png Running Time: 0.0218.
+This is low_haze degradation estimated by visual embedder.
+0018.png Running Time: 0.0230.
+Average time is 0.02295398712158203

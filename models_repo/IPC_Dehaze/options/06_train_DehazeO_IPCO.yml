@@ -1,0 +1,57 @@
+# 1. 修改实验名称，这是 experiments 下新文件夹的名字
+name: 02_smoke_DehazeO_IPCO_experiment
+
+model_type: PredictorModel
+scale: 1
+num_gpu: 1
+manual_seed: 0
+
+# 2. 修改数据集路径
+datasets:
+  train:
+    name: DehazeO_IPCO_Train
+    type: PairedImageDataset
+    dataroot_gt: /data_nvme/ljc/smoke_DehazeO_IPCO/train/GT
+    dataroot_lq: /data_nvme/ljc/smoke_DehazeO_IPCO/train/hazy
+    io_backend:
+      type: disk
+
+    use_resize_crop: true
+    use_hflip: true
+    use_rot: true
+    gt_size: 256
+    batch_size_per_gpu: 4
+    num_worker_per_gpu: 4
+
+  val:
+    name: DehazeO_IPCO_Val
+    type: PairedImageDataset
+    dataroot_gt: /data_nvme/ljc/smoke_DehazeO_IPCO/val/GT
+    dataroot_lq: /data_nvme/ljc/smoke_DehazeO_IPCO/val/hazy
+    io_backend:
+      type: disk
+
+# 3. 路径设置 (回到 v1 原点)
+path:
+  pretrain_network_hq: pretrained_models/vqgan.pth
+  # 【关键】加载你备份的原始权重，确保是从 v1 开始微调
+  pretrain_network_g: pretrained_models/predictor_original.pth
+  pretrain_network_d: pretrained_models/vqgan_d.pth
+  strict_load: false
+  # 【极其重要】确保这里是空的，不要接之前的进度
+  resume_state: ~
+
+# 4. 训练步数建议
+train:
+  # 如果这个数据集比较大（比如几百张图），建议 total_iter 设为 10000-20000
+  total_iter: 10000
+  optim_g:
+    lr: !!float 2e-5
+
+# 5. 保存和验证频率
+val:
+  val_freq: !!float 1000
+logger:
+  save_checkpoint_freq: !!float 1000
+  show_tf_imgs_freq: !!float 1000
+  save_latest_freq: !!float 1000

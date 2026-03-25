@@ -1,0 +1,13 @@
+# 忽略权重文件
+*.pth
+*.ckpt
+*.tar
+checkpoints/
+weights/
+
+
+# 忽略临时文件和系统垃圾
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

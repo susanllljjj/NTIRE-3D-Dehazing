@@ -1,0 +1,1 @@
+Namespace(sh_degree=3, source_path='/data_nvme/ljc/IHDCP/Futaba', model_path='./output/45ead28f-8', images='images', depths='/data_nvme/ljc/IHDCP/Futaba/depths', resolution=1, white_background=False, train_test_exp=False, data_device='cuda', eval=True, render_items=['RGB', 'RGB_J', 'Depth', 'Edge', 'Normal', 'Curvature', 'Alpha'])

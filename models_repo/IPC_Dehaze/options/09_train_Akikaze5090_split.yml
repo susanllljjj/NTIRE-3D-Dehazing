@@ -1,0 +1,122 @@
+# 1. 实验名称
+name: 09_train_Akikaze5090_split
+
+model_type: PredictorModel
+scale: 1
+num_gpu: 1
+manual_seed: 0
+
+# 2. 数据集路径 (请务必确认文件夹名是 gt 还是 GT，hazy 还是 Hazy)
+datasets:
+  train:
+    name: Akikaze5090_Train
+    type: PairedImageDataset
+    dataroot_gt: /data_nvme/ljc/smoke_Akikaze5090/Akikaze/split_data/train/gt
+    dataroot_lq: /data_nvme/ljc/smoke_Akikaze5090/Akikaze/split_data/train/hazy
+    io_backend:
+      type: disk
+
+    use_resize_crop: true
+    use_flip: true
+    use_rot: true
+    gt_size: 256
+    batch_size_per_gpu: 4
+    num_worker_per_gpu: 4
+
+  val:
+    name: Akikaze5090_Val
+    type: PairedImageDataset
+    dataroot_gt: /data_nvme/ljc/smoke_Akikaze5090/Akikaze/split_data/test/gt
+    dataroot_lq: /data_nvme/ljc/smoke_Akikaze5090/Akikaze/split_data/test/hazy
+    io_backend:
+      type: disk
+
+# 3. 网络结构 (保持不变)
+network_g:
+  type: DehazeTokenNet
+  gt_resolution: 256
+  norm_type: 'gn'
+  act_type: 'silu'
+  codebook_params: [64, 1024, 256]
+  LQ_stage: true
+  code_only: false
+  detach_16: true
+  frozen_module_keywords: ['quantize', 'decoder', 'after_quant', 'out_conv']
+
+network_hq:
+  type: VQGAN
+  gt_resolution: 256
+  norm_type: 'gn'
+  act_type: 'silu'
+  codebook_params: [64, 1024, 256]
+  LQ_stage: false
+
+network_d:
+  type: UNetDiscriminatorSN
+  num_in_ch: 3
+
+# 4. 【关键】加载初始权重 v1
+path:
+  pretrain_network_hq: pretrained_models/vqgan.pth
+  pretrain_network_g: pretrained_models/predictor.pth
+  pretrain_network_d: pretrained_models/vqgan_d.pth
+  strict_load: false
+  # 开启新实验，必须为 ~
+  resume_state: ~
+
+# 5. 训练设置
+train:
+  # 如果 Akikaze5090 代表有 5000 张图，建议增加总迭代次数
+  total_iter: 6000
+  optim_g:
+    type: Adam
+    lr: !!float 2e-5 # 初始微调建议用 2e-5
+    weight_decay: 0
+    betas: [0.9, 0.99]
+  optim_d:
+    type: Adam
+    lr: !!float 2e-5
+
+  scheduler:
+    type: MultiStepLR
+    milestones: [3000, 5000]
+    gamma: 0.5
+
+  # 损失函数保持之前的优化设置
+  pixel_opt:
+    type: L1Loss
+    loss_weight: 2.0
+    reduction: mean
+  perceptual_opt:
+    type: LPIPSLoss
+    loss_weight: !!float 1.0
+  gan_opt:
+    type: GANLoss
+    gan_type: hinge
+    loss_weight: 0.1
+  cross_entropy_opt:
+    token_weight: 1
+  net_d_iters: 1
+  net_d_init_iters: 0
+
+# 6. 验证和日志设置
+val:
+  val_freq: !!float 100
+  save_img: true
+  metrics:
+    psnr:
+      type: psnr
+      crop_border: 4
+      test_y_channel: true
+
+logger:
+  print_freq: 100
+  save_checkpoint_freq: !!float 100
+  save_latest_freq: !!float 100
+  show_tf_imgs_freq: !!float 100
+  use_tb_logger: true
+
+dist_params:
+  backend: nccl
+  port: 16500
+find_unused_parameters: true

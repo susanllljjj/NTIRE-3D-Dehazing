@@ -1,0 +1,31 @@
+folder1: /data_nvme/gy/smoke/validation/Akikaze/val
+folder2: output/Akikaze
+匹配文件数: 25
+
+0001.png: PSNR = 20.9162 dB
+0002.png: PSNR = 21.4957 dB
+0003.png: PSNR = 19.9898 dB
+0004.png: PSNR = 20.9141 dB
+0005.png: PSNR = 20.4523 dB
+0006.png: PSNR = 20.5313 dB
+0007.png: PSNR = 20.4726 dB
+0008.png: PSNR = 19.4547 dB
+0009.png: PSNR = 20.7448 dB
+0010.png: PSNR = 21.4177 dB
+0011.png: PSNR = 21.4913 dB
+0012.png: PSNR = 21.0023 dB
+0013.png: PSNR = 20.7412 dB
+0014.png: PSNR = 19.9628 dB
+0015.png: PSNR = 20.4739 dB
+0016.png: PSNR = 19.9152 dB
+0017.png: PSNR = 19.2263 dB
+0018.png: PSNR = 19.9004 dB
+0019.png: PSNR = 19.7269 dB
+0020.png: PSNR = 19.9139 dB
+0021.png: PSNR = 19.4631 dB
+0022.png: PSNR = 19.6580 dB
+0023.png: PSNR = 19.4258 dB
+0024.png: PSNR = 19.1730 dB
+0025.png: PSNR = 17.7745 dB
+
+平均 PSNR: 20.1695 dB

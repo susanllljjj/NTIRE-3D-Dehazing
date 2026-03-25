@@ -1,0 +1,12 @@
+python train_OneRestore_single-gpu.py \
+  --embedder-model-path /home/gy/OneRestore/ckpts/embedder_model.tar \
+  --restore-model-path ckpts/onerestore_ft_epoch2_v2.tar \
+  --save-model-path /home/gy/OneRestore/ \
+  --train-input /home/gy/OneRestore/haze.h5 \
+  --test-input /home/gy/OneRestore/data/haze/test \
+  --output /home/gy/OneRestore/result_ft/ \
+  --epoch 10 \
+  --bs 1 \
+  --lr 1e-5 \
+  --adjust-lr 1000 \
+  --num-works 0
