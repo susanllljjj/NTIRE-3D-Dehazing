@@ -30,7 +30,7 @@
 ## 📦 权重准备
 
 由于模型权重体积较大，请从以下链接下载并放置于对应目录：
-- **下载链接**: [此处填写你的云盘链接]
+- **下载链接**: [https://pan.baidu.com/s/1bFYhcMgtUdhyVWAX5E1Q6g?pwd=ib4g 提取码: ib4g]
 - **放置路径**:
   - `weights/` (集成权重包)
   - `checkpoints/difix_hf/` (扩散模型目录)
